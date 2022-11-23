@@ -15,7 +15,7 @@ function MovieList(props) {
       });
   }, []);
 
-  const categories = movies
+  const categories = movies && movies
     .map((movie) => movie.category)
     .filter(
       (category, index, categories) => categories.indexOf(category) === index
